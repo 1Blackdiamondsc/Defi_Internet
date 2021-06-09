@@ -1,0 +1,3 @@
+module DecentralizedInternet
+
+end # module

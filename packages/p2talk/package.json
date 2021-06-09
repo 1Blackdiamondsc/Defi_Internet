@@ -1,0 +1,57 @@
+{
+  "name": "p2talk",
+  "version": "1.0.1",
+  "description": "Decentralized Internet p2p module [GSM Alternative]",
+  "main": "lib/p2p.js",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "defekt": "7.2.0",
+    "eventemitter2": "6.4.4",
+    "express": "4.17.1",
+    "decentralized-internet": "^5.0.0",
+    "flaschenpost": "5.0.36",
+    "lodash": "4.17.20",
+    "parse-duration": "1.0.0",
+    "processenv": "3.0.5",
+    "random-int": "3.0.0",
+    "request": "2.88.2",
+    "require-all": "3.0.0",
+    "sha1": "1.1.1",
+    "string.prototype.padleft": "2.0.0",
+    "timer2": "1.0.0",
+    "uuidv4": "6.2.10",
+    "snyk": "^1.337.0"
+  },
+  "devDependencies": {
+    "assertthat": "6.3.2",
+    "async": "3.2.0",
+    "comparejs": "4.0.9",
+    "crew": "0.9.1",
+    "freeport": "1.0.5",
+    "grunt": "1.4.1",
+    "knockat": "4.0.78",
+    "nock": "13.1.0",
+    "supertest": "6.1.3",
+    "tourism": "0.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "keywords": [
+    "Decentralized",
+    "Internet",
+    "P2P",
+    "GSM",
+    "Communication",
+    "Wireless",
+    "Protocol",
+    "Peer",
+    "LocalHost",
+    "Modules"
+  ],
+  "author": "The Lonero Foundation",
+  "license": "MIT",
+  "snyk": true
+}

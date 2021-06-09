@@ -1,0 +1,55 @@
+{
+  "name": "clusterpost-server",
+  "version": "2.3.2",
+  "description": "Server side application using REST api. Create/post 'job' document describing task and input data, run tasks on remote computing grids and retrive outputs. All process is done automatically.",
+  "main": "index.js",
+  "dependencies": {
+    "@hapi/boom": "^9.0.0",
+    "@hapi/good": "^9.0.0",
+    "@hapi/good-console": "^9.0.0",
+    "@hapi/good-squeeze": "^6.0.0",
+    "@hapi/h2o2": "^9.0.0",
+    "@hapi/hapi": "^20.0.0",
+    "@hapi/inert": "^6.0.0",
+    "@hapi/vision": "^6.0.0",
+    "@juanprietob/hapi-auth-jwt": "github:juanprietob/hapi-auth-jwt#master",
+    "bcrypt": "^5.0.0",
+    "bluebird": "^3.5.4",
+    "clusterpost-model": "^1.9.0",
+    "clusterpost-provider": "^4.1.1",
+    "clusterpost-static": "^1.0.0",
+    "couch-provider": "3.0.1",
+    "couch-update-views": "1.0.10",
+    "hapi-jwt-couch": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lout": "^11.2.3",
+    "node-crontab": "0.0.8",
+    "nodemailer": "^6.4.16",
+    "request": "^2.88.0",
+    "underscore": "^1.9.1",
+    "snyk": "^1.425.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node ./checkConfiguration.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/juanprietob/clusterpost.git"
+  },
+  "keywords": [
+    "cluster",
+    "computing",
+    "REST"
+  ],
+  "author": "juanprietob@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/juanprietob/clusterpost/issues"
+  },
+  "homepage": "https://github.com/juanprietob/clusterpost#readme",
+  "snyk": true
+}

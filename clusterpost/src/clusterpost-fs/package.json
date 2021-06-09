@@ -1,0 +1,23 @@
+{
+  "name": "clusterpost-fs",
+  "version": "1.0.3",
+  "description": "Serves a local filesystem using a route ",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -v test.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "keywords": [
+    "Filesystem",
+    "clusterpost"
+  ],
+  "author": "juanprietob@gmail.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "boom": "^7.0.0",
+    "underscore": "^1.8.3",
+    "snyk": "^1.425.4"
+  },
+  "snyk": true
+}

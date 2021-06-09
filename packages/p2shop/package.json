@@ -1,0 +1,69 @@
+{
+  "name": "p2shop",
+  "version": "1.0.4",
+  "description": "E-Com Plus's cart library w/ Decentralized Internet backend",
+  "module": "src/index.js",
+  "browser": "dist/ecom-cart.min.js",
+  "main": "dist/ecom-cart.node.js",
+  "jsdelivr": "dist/ecom-cart.var.min.js",
+  "unpkg": "dist/ecom-cart.var.min.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "serve": "webpack-dev-server",
+    "doc": "rm -rf ./docs/*; jsdoc ./src -r ./README.md -d ./docs -t ./node_modules/docdash",
+    "release": "rm -rf ./dist; npm ddp && npm run build && standard-version",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "keywords": [
+    "ecommerce",
+    "storefront",
+    "shopping",
+    "decentralized",
+    "blockchain",
+    "p2p",
+    "digital",
+    "cart"
+  ],
+  "author": "The Lonero Foundation",
+  "license": "MIT",
+  "peerDependencies": {
+    "@ecomplus/utils": "^1.2.0"
+  },
+  "optionalDependencies": {
+    "core-js": "3.x"
+  },
+  "dependencies": {
+    "eventemitter3": "^4.0.0",
+    "decentralized-internet": "^5.0.0",
+    "snyk": "^1.424.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.14.3",
+    "@babel/preset-env": "7.14.4",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "@ecomplus/utils": "1.4.1",
+    "babel-loader": "8.2.2",
+    "core-js": "3.14.0",
+    "docdash": "1.2.0",
+    "husky": "6.0.0",
+    "jsdoc": "3.6.7",
+    "standard": "16.0.3",
+    "standard-version": "9.3.0",
+    "webpack": "5.38.1",
+    "webpack-cli": "4.7.0",
+    "webpack-dev-server": "3.11.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "browserslist": [
+    "last 1 version",
+    "not dead",
+    "> 0.2%"
+  ],
+  "snyk": true
+}

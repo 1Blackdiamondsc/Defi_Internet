@@ -1,0 +1,57 @@
+{
+  "name": "p2lara",
+  "version": "1.0.1",
+  "description": "Decentralized LoraWan network based off of Ding.js",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "ts-mocha -p ./tsconfig.json test/*.ts",
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/src/index.js",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "start": "npm run dev",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "keywords": [
+    "Decentralized",
+    "Lorawan",
+    "IOT",
+    "Blockchain",
+    "P2P",
+    "connectivity",
+    "wireless",
+    "networking"
+  ],
+  "author": "The Lonero Foundation",
+  "license": "Apache-2.0 or MIT",
+  "dependencies": {
+    "decentralized-internet": "^5.0.0",
+    "@types/mosca": "^2.8.1",
+    "express": "^4.16.4",
+    "influx": "^5.0.7",
+    "mosca": "^2.8.3",
+    "mqtt": "^4.0.1",
+    "ttn": "^2.3.2",
+    "snyk": "^1.323.2"
+  },
+  "devDependencies": {
+    "@types/expect": "24.3.0",
+    "@types/express": "4.17.12",
+    "@types/mocha": "8.2.2",
+    "@types/node": "15.12.2",
+    "concurrently": "6.2.0",
+    "mocha": "8.4.0",
+    "nodemon": "2.0.7",
+    "ts-mocha": "8.0.0",
+    "ts-node": "10.0.0",
+    "tslint": "6.1.3",
+    "typescript": "4.3.2",
+    "vuepress": "1.8.2"
+  },
+  "snyk": true
+}

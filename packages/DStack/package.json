@@ -1,0 +1,22 @@
+{
+  "name": "dstack",
+  "version": "1.0.0",
+  "description": "OpenStack and Distributed Computing datastore",
+  "main": "index.js",
+  "dependencies": {
+    "pkgcloud": "^2.2.0",
+    "openstack-wrapper": "^2.2.0",
+    "decentralized-internet": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OpenStack",
+    "blockchain",
+    "decentralized",
+    "decentralized-internet"
+  ],
+  "author": "Andrew Magdy Kamal",
+  "license": "MIT"
+}
